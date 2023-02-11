@@ -15,7 +15,7 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-				underline: "url('./assets/icons/underline.svg')"
+				underline: "url('/assets/icons/underline.svg')"
 			},
 			keyframes: {
 				"fade-in-down": {
