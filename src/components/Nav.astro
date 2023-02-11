@@ -13,7 +13,7 @@ const navItems: NavItem[] = [
 ---
 
 <nav class="flex justify-between items-center">
-  <a href="/"><img src="assets/logo/nav.svg" alt="Logo" class="h-10"/></a>
+  <a href="/"><img src="/assets/logo/nav.svg" alt="Logo" class="h-10"/></a>
 
   <ul class="hidden md:flex items-center font-montserrat gap-x-3">
     {navItems.map((navItem) =>
@@ -21,13 +21,13 @@ const navItems: NavItem[] = [
   </ul>
 
   <div id="showMenu" class="md:hidden">
-    <img src='assets/icons/menu.svg' alt="Menu icon" class="h-10"/>
+    <img src='/assets/icons/menu.svg' alt="Menu icon" class="h-10"/>
   </div>
 </nav>
 
 <div id="mobileNav" class="hidden fixed p-10 top-0 left-0 h-full w-full bg-black z-20 animate-fade-in-down">
   <div class="flex justify-end">
-    <img id="hideMenu" src='assets/icons/cross.svg' alt="" class="h-10"/>
+    <img id="hideMenu" src='/assets/icons/cross.svg' alt="" class="h-10"/>
   </div>
   <ul class="flex flex-col items-center font-montserrat mx-8 my-24 text-3xl">
     {navItems.map((navItem) =>
