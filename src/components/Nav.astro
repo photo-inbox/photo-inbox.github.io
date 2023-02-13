@@ -25,10 +25,9 @@ const navItems: NavItem[] = [
   </div>
 </nav>
 
-<div id="mobileNav" class="hidden fixed p-10 top-0 left-0 h-full w-full bg-black z-20 animate-fade-in-down">
-  <div class="flex justify-end">
-    <img id="hideMenu" src='/assets/icons/cross.svg' alt="" class="h-10"/>
-  </div>
+<div id="mobileNav"
+     class="hidden fixed flex flex-col p-10 top-0 left-0 h-full w-full bg-black z-20 animate-fade-in-down">
+  <img id="hideMenu" class="h-10 self-end" src='/assets/icons/cross.svg' alt="Hide menu icon"/>
   <ul class="flex flex-col items-center font-montserrat mx-8 my-24 text-3xl">
     {navItems.map((navItem) =>
         <li class="my-6"><a href=`${navItem.route}`>{navItem.title}</a></li>)}
@@ -53,7 +52,7 @@ const navItems: NavItem[] = [
     background-color: white;
     transition: opacity 300ms, transform 300ms;
     opacity: 1;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-101%, 0, 0);
   }
 
   .growing-underline:hover::after,
