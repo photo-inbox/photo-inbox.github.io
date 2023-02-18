@@ -17,10 +17,12 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
       <p class="font-pt-serif font-normal mb-7">
         Don't waste your time typing, just shot whatever needs to be done!
       </p>
-      <div class="flex flex-col items-stretch sm:grid sm:grid-flow-col place-items-center gap-2">
-        <img src="/assets/app-store-badge.svg" alt="Download on the App Store"/>
-        <a class="flex flex-col justify-center" href="https://play.google.com/store/apps/details?id=io.photo_inbox.mobile" target="_blank">
-          <img src="/assets/google-play-badge.svg" alt="Get it on Google Play"/>
+      <div class="flex flex-col items-stretch sm:flex-row place-items-center gap-2">
+        <a class="flex-1 flex justify-center"  href="https://apps.apple.com/app/photo-inbox-to-do-tracker/id1671844686" target="_blank">
+          <img class="sm:w-auto w-full" src="/assets/app-store-badge.svg" alt="Download on the App Store"/>
+        </a>
+        <a class="flex-1 flex justify-center" href="https://play.google.com/store/apps/details?id=io.photo_inbox.mobile" target="_blank">
+          <img class="sm:w-auto w-full" src="/assets/google-play-badge.svg" alt="Get it on Google Play"/>
         </a>
       </div>
     </section>
